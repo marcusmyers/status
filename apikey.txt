@@ -1,6 +1,0 @@
-Google API Key: ABQIAAAAeiV8QcjRzVreooy6xD2vvxQ1dKXbrvPhpjOqskkBCj21hFZHRxS1n9icvB_eYHCyT1az6-qbDljOPg
-
-Example:
-
-<script src="https://www.google.com/jsapi?key=ABQIAAAAeiV8QcjRzVreooy6xD2vvxQ1dKXbrvPhpjOqskkBCj21hFZHRxS1n9icvB_eYHCyT1az6-qbDljOPg" type="text/javascript"></script>
-
