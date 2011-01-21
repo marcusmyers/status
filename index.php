@@ -16,7 +16,7 @@
 	<script src="/status/js/statBoard.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery.jdigiclock.css" />
 	<link rel="stylesheet" type="text/css" href="default.css" />
-    <script type="text/javascript">
+    <script>
             function draw(){
             var canvas = document.getElementById('tutorial');
             if (canvas.getContext){
@@ -58,7 +58,7 @@
 			<div id="schedule">
 				<h1>Events</h1>
 				<ul>
-					<?php //echo getSchedule(); ?>
+					<?php echo getSchedule(); ?>
 				</ul>
 			</div>
 		</div>
@@ -74,7 +74,7 @@
 		</div>
 		<div id="projects">
             <?php
-            //echo getProjects(); 
+            echo getProjects(); 
             ?>
 		</div>
 	</div>

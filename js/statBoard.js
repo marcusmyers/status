@@ -2,14 +2,11 @@ var statBoard = function () {
 	return {
 		twitterize : function (selector, fn, subject) {
 			var container = $(selector);
-            
-//            alert("Made it to the twitterize function 1." + selector + " 2." + fn + " 3." + subject);
 			
 			twitterlib.timeline(subject, { limit : 10 }, function (tweets) {
 				var list = $('<ul />'), i
 					len = tweets.length,
-					totalWidth = 0;
-//					alert("made it in the twitterlib function");					
+					totalWidth = 0;					
 				for (i = 0; i < len; i++ ) {
 					$('<li><a><img/></a></li>')
 						.find('a')
