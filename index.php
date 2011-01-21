@@ -6,8 +6,9 @@
     <meta charset='utf-8' />
     <meta http-equiv="refresh" content="1800" />
     <title>Status Board</title>
-	<script src="https://www.google.com/jsapi?key=ABQIAAAAeiV8QcjRzVreooy6xD2vvxQ1dKXbrvPhpjOqskkBCj21hFZHRxS1n9icvB_eYHCyT1az6-qbDljOPg" type="text/javascript"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<!--<script src="https://www.google.com/jsapi?key=ABQIAAAAeiV8QcjRzVreooy6xD2vvxQ1dKXbrvPhpjOqskkBCj21hFZHRxS1n9icvB_eYHCyT1az6-qbDljOPg" type="text/javascript"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="/status/js/jquery.jdigiclock.js"></script>
 	<script type="text/javascript" src="/status/js/twitterlib.min.js"></script>
     <script type="text/javascript" src="/status/js/jquery.flot.min.js"></script>
