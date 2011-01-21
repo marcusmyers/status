@@ -49,7 +49,7 @@
 			<div id="schedule">
 				<h1>Events</h1>
 				<ul>
-					<?php echo getSchedule(); ?>
+					<?php //echo getSchedule(); ?>
 				</ul>
 			</div>
 		</div>
