@@ -1,5 +1,53 @@
 var statBoard = function () {
 	return {
+		twitterize : function (selector, fn, subject) {
+			var container = $(selector);
+			
+			twitterlib.timeline(subject, { limit : 10 }, function (tweets) {
+				var list = $('<ul />'), i
+					len = tweets.length,
+					totalWidth = 0;					
+				for (i = 0; i < len; i++ ) {
+					$('<li><a><img/></a></li>')
+						.find('a')
+						.attr('href', 'http://www.twitter.com/' + tweets[i].user.screen_name + '/status/' + tweets[i].id)
+						.end()
+							.find('img')
+							.attr('src', tweets[i].user.profile_image_url)
+							.end()
+					.append(this.ify.clean(tweets[i].text))
+					.appendTo(list);
+				}
+				container.append(list);
+				
+				$('li', list).each(function (i, el) {
+					
+					totalWidth += $(el).outerWidth(true);
+				});
+				
+				list.width(totalWidth);
+				
+				function scrollTweets() {
+					var rand = totalWidth * Math.floor(Math.random() * 10 + 15);
+					list.startAnimation({
+						right: totalWidth
+					}, rand, 'linear', function () {
+						list.css('right', - container.width());
+						scrollTweets();
+					});
+				}
+				
+				scrollTweets();
+				
+				list.hover(function () {
+					list.pauseAnimation();
+				}, function () {
+					list.resumeAnimation();
+				});
+			}); // end of twitterlib
+		
+		},
+
 		iconizeWorkers : function (selector) {
 			$(selector).each(function (i, el) {
 				var el = $(el), 

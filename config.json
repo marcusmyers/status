@@ -1,13 +1,10 @@
 {
-    "width": 1000,
     "title": "Status",
-    "rotate": "no",
     "modules": [
 	{
-	    "name": "trello",
-	    "desc": "Project Manager",
-	    "key": "d82fd533350a70b9e229403e9b8d4648",
-	    "oauth_token": "2856d7465a39808f35877f735fb91fcfcf6488d2d1e67aa54916426eb41314ca",
+	    "name":"meta",
+	    "class":"full-size meta",
+	    "update":0
 	}
     ]
 }

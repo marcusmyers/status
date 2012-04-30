@@ -4,42 +4,41 @@ body {
 	color:#494949;
 }
 
-#wrap > div { overflow:hidden; } 
+#board {margin: 0 auto;}
+#board > div { overflow:hidden; } 
+
+.module {
+   width: 49%;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float: right;
+}
+
+.full-size {
+    width: 100%;
+    overflow:hidden;
+}
 
 h1 { margin:0; padding:0; font-size:40px; }
 
+meta {
+    background-color: #dedede;
+    font-size: 20pt;
+}
+
+/*############## OLD #################*/
 /* ===== Data =====*/
 
 #data {
 /*	margin-bottom:40px;*/
 }
 
-#tickets {
-	width:49%;
-    background-color: #494949;
-    color: #f3f3f3;
-    text-align: center;
-	float:left;
-    border-radius:15px;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-}
 
-#tickets h1 {
-    background-color: #000046;
-    width: 100%;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    -moz-border-radius-topright: 15px;
-    -moz-border-radius-topleft: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -webkit-border-top-left-radius: 15px;
-}
-
-#tickets p {
-    margin:0px;
-    font-size: 825%;
-}
 
 #tooltip {
 	position:absolute;
@@ -101,13 +100,6 @@ h1 { margin:0; padding:0; font-size:40px; }
 	font-style:italic;
 }
 
-
-/* ==== digiclock ==== */
-#digiclock {
-	width: 49%;
-	float: right;
-}
-
 /* ===== visitors ===== */
 
 #sitestats {
@@ -158,33 +150,6 @@ h1 { margin:0; padding:0; font-size:40px; }
 }
 #projects img {
 	vertical-align:middle;
-}
-
-/* ===== twitter ===== */
-#twitter {
-	background-color: #ededed;
-	width: 100%;
-}
-#twitter > div {
-	overflow:hidden;
-	font-size:20px;
-}
-
-#twitter ul {
-	list-style-type:none;
-	width:5000px;
-	position:relative;
-}
-#twitter li {
-	float:left;
-	margin-right:10px;
-}
-#twitter img {
-	vertical-align:center;
-	margin-right:10px;
-	border:0;
-	height:20px;
-	width:20px;
 }
 
 

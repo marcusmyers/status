@@ -1,0 +1,21 @@
+<script src="js/jquery.jdigiclock.js"></script>
+	<?php
+echo "<script>
+$(document).ready(function(){
+    $('#jdigiclock').jdigiclock(
+	{";
+
+			foreach($_GET as $key=>$value){
+			    if(is_string($value)){
+			    	echo $key.":'".urldecode($value)."'";
+			    } else {
+				echo $key.":".urldecode($value);
+			    }
+			}
+echo "
+        }
+    );
+});
+
+</script>";
+		?>
