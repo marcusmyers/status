@@ -1,12 +1,9 @@
 <?php
 $title = $_GET["title-header"];
-$url = urldecode($_GET["url"]);
-$json_data = file_get_contents($url);
-
-$new_data = json_decode($json_data);
+$videoFeed = $_GET["vfeed"];
 ?>
 <style>
-#tickets {
+#rtsp {
     background-color: #494949;
     color: #f3f3f3;
     height: 480px;
@@ -16,7 +13,7 @@ $new_data = json_decode($json_data);
     -webkit-border-radius:15px;
 }
 
-#tickets h1 {
+#rtsp h1 {
     padding: 10px;
     background-color: #000046;
     width: 100%;
@@ -27,14 +24,10 @@ $new_data = json_decode($json_data);
     -webkit-border-top-right-radius: 15px;
     -webkit-border-top-left-radius: 15px;
 }
-
-#tickets p {
-    margin:0px;
-    font-size: 825%;
-}
 </style>
-<div id="tickets">
-	<h1><?php echo $title; ?></h1>
-        <p><?php echo $new_data->tickets;?></p>
+<div id="rtsp">
+    <h1><?php echo $title; ?></h1>
+    <p>
+	<embed type="application/x-vlc-plugin" pluginspace="http://www.videolan.org" width="100%" height="320" src="<?php echo $videoFeed; ?>"/>
+    </p>
 </div>
-

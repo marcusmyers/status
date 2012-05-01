@@ -11,6 +11,15 @@
 	    }
 	},
 	{
+	    "name":"rtsp",
+	    "class":"module right",
+	    "update":0,
+	    "args": {
+		"vfeed":"rtsp://10.20.27.123:554/live/ch01_0",
+		"title-header":"Camera 1"
+	    }
+	},
+	{
 	    "name":"meta",
 	    "class":"full-size meta",
 	    "update":0
