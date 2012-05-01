@@ -1,9 +1,12 @@
 <?php
-$title = $_GET['title-header'];
+$title = $_GET["title-header"];
+$url = urldecode($_GET["url"]);
+$json_data = file_get_contents($url);
+
+$new_data = json_decode($json_data);
 ?>
 <style>
 #tickets {
-
     background-color: #494949;
     color: #f3f3f3;
     text-align: center;
@@ -13,6 +16,7 @@ $title = $_GET['title-header'];
 }
 
 #tickets h1 {
+    padding: 10px;
     background-color: #000046;
     width: 100%;
     border-top-right-radius: 15px;
@@ -30,6 +34,6 @@ $title = $_GET['title-header'];
 </style>
 <div id="tickets">
 	<h1><?php echo $title; ?></h1>
-        <p>15</p>
+        <p><?php echo $new_data->tickets;?></p>
 </div>
 

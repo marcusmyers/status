@@ -2,6 +2,15 @@
     "title": "Status",
     "modules": [
 	{
+	    "name":"glpi",
+	    "class":"module left",
+	    "update":15,
+	    "args": {
+	    	"url":"http://helpdesk.napoleonareaschools.org/ticketNum.php",
+		"title-header":"OPEN TICKETS"
+	    }
+	},
+	{
 	    "name":"meta",
 	    "class":"full-size meta",
 	    "update":0

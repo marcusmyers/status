@@ -18,7 +18,7 @@ function render($module) {
     
     //$style = "width: {$module->width}px;";
     //if ($module->height) $style .= " height: {$module->height}px";
-    echo "<div class='module $module->class' id='$module->name' "/*style='$style'*/."></div>\n";
+    echo "<div class='$module->class' id='$module->name' "/*style='$style'*/."></div>\n";
     echo "\t<script type='text/javascript'>activate_module('$module->name', $module->update, $argstr);</script>\n\n";
 }
 
@@ -54,11 +54,11 @@ function render($module) {
             });
     </script>
     <style>
-      canvas { border: 1px solid #fffff; }
+      canvas { border: 1px solid #ffffff; }
     </style>
 
 </head>
-<body onload="draw();">
+<body> <!-- onload="draw();" -->
 	<div id="board">
 		<!--<div id="data">
 			<div id="tickets">
