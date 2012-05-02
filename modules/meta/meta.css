@@ -1,0 +1,12 @@
+.meta {
+    clear: both;
+    width:98%;
+    margin-top: 20px;
+    background-color: #dedede;
+    font-size: 12pt;
+    padding: 10px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+

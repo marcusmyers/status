@@ -17,23 +17,15 @@
 	    "update":0,
 	    "css":"modules/rtsp/rtsp.css",
 	    "args": {
-		"vfeed":"rtsp://ipeyeanywhere.marmitek.com/mpeg4",
+		"vfeed":"rtsp://10.20.27.123:554/live/ch01_0",
 		"title-header":"Camera 1"
 	    }
-	},
-	{
-	    "name":"weatherwidget",
-	    "class":"module left",
-	    "update":0,
-	    "css":"modules/weatherwidget/weatherwidget.css",
-	    "js":"modules/weatherwidget/weatherwidget.js"
 	},
 	{
 	    "name":"meta",
 	    "class":"full-size meta",
 	    "update":0,
-	    "width":"98%",
-	    "css":"modules/meta/meta.css"
+	    "width":"98%"
 	}
     ]
 }

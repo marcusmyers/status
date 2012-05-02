@@ -1,5 +1,5 @@
 function render_module(name, args, firstrun) {
-  $('#' + name).load('modules/' + name + '.module.php?' + args , function() {
+  $('#' + name).load('modules/' + name + '/' + name + '.module.php?' + args , function() {
     if (firstrun==1)
         module_init (name);
     });
@@ -23,7 +23,8 @@ $(document).ready(function() {
   });
 });
 
-
+// Could use for possible stock ticker
+// just defaulting for now
 function module_init (name) {
     switch (name) {
         default:
