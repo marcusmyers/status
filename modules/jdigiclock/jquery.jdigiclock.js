@@ -18,8 +18,8 @@
         jdigiclock: function(options) {
 
             var defaults = {
-                clockImagesPath: 'images/clock/',
-                weatherImagesPath: 'images/weather/',
+                clockImagesPath: '/status/modules/jdigiclock/images/clock/',
+                weatherImagesPath: '/status/modules/jdigiclock/images/weather/',
                 lang: 'en',
                 am_pm: false,
                 weatherLocationCode: 'EUR|BG|BU002|BOURGAS',
