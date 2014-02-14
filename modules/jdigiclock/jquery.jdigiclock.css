@@ -31,7 +31,7 @@
 #digital_container {
     width:500px;
     height:360px;
-    background:url(modules/jdigiclock/images/background.png) 50% 40px no-repeat;
+    background:url(images/background.png) 50% 40px no-repeat;
     position:absolute;
     top:40px;
     left:0;
@@ -143,7 +143,7 @@
 #forecast_container {
     width:500px;
     height:400px;
-    background:url(modules/jdigiclock/images/background_forecast.png) 50% 100% no-repeat;
+    background:url(images/background_forecast.png) 50% 100% no-repeat;
     position:absolute;
     top:0;
     left:500px;
