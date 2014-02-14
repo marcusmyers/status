@@ -12,28 +12,17 @@
 	    }
 	},
 	{
-	    "name":"rtsp",
+	    "name":"jdigiclock",
 	    "class":"module right",
 	    "update":0,
-	    "css":"modules/rtsp/rtsp.css",
-	    "args": {
-		"vfeed":"rtsp://ipeyeanywhere.marmitek.com/mpeg4",
-		"title-header":"Camera 1"
-	    }
+	    "css":"modules/jdigiclock/jquery.jdigiclock.css",
+	    "js":"modules/jdigiclock/jquery.jdigiclock.js"
 	},
 	{
-	    "name":"weatherwidget",
-	    "class":"module left",
-	    "update":0,
-	    "css":"modules/weatherwidget/weatherwidget.css",
-	    "js":"modules/weatherwidget/weatherwidget.js"
-	},
-	{
-	    "name":"meta",
-	    "class":"full-size meta",
-	    "update":0,
-	    "width":"98%",
-	    "css":"modules/meta/meta.css"
+		"name":"sitestats",
+		"class":"module left",
+		"update":60,
+		"js":"modules/sitestats/Chart.js"
 	}
     ]
 }

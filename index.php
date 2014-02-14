@@ -31,7 +31,7 @@ $js = "";
 <head>
     <meta charset='utf-8' />
     <title><?php echo (isset($data->title) ? $data->title : 'generic status board') ?></title>
-    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="js/board.js"></script>
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <?php
