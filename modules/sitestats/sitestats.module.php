@@ -21,7 +21,7 @@ for($i = 0; $i < 10; $i++){
 ?>
 
 
-<canvas id="myChart" width="512"></canvas>
+<canvas id="myChart" width="512" height="300"></canvas>
 <script type="text/javascript">
 	var lineChartData = {
 			labels : ["9","8","7","6","5","4","3","2","1","Today"],
